@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = createRoot(document.getElementById('root') as HTMLElement);
 root.render(
 	<StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL || undefined}>
 			<App/>
 		</BrowserRouter>
 	</StrictMode>

@@ -30,7 +30,7 @@ interface CarouselProps {
 function CarouselSwitcher({items, autoPlayDuration = 3000}: CarouselProps) {
 	const [currentItem, setCurrentItem] = useState(0);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-	const [_, setProgress] = useState(0);
+	const [, setProgress] = useState(0);
 
 	const total = items.length;
 	const currentImages = items[currentItem].images;

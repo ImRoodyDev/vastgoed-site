@@ -1,10 +1,11 @@
 import React from 'react';
 import RotatingText from '../../libraries/react-bits/RotatingText';
-import {useRootContext} from '../../contexts/RootContext';
-import AppConfig from '../../constant/application'
+import { useRootContext } from '../../contexts/RootContext';
+import AppConfig from '../../constant/application';
+import { publicPath } from '../../utils/publicPath';
 
 function SectionAbout() {
-	const {t} = useRootContext();
+	const { t } = useRootContext();
 
 	const qualityTexts = [t('kwaliteit'), t('transparantie'), t('persoonlijke_service')];
 	return (
@@ -12,7 +13,11 @@ function SectionAbout() {
 			<div className={'section-about-block'}>
 				<div className={'section-me-picture'}>
 					{/*<img src={'/svg/shape.svg'} className={'section-home-block-me-shape'} alt={t('alt_shape_behind_makelaar')}/>*/}
-					<img src={'/pictures/arjun2.png'} className={'section-home-block-me-img'} alt={t('alt_picture_of_the_makelaar')}/>
+					<img
+						src={publicPath('/pictures/representative.png')}
+						className={'section-home-block-me-img'}
+						alt={t('alt_picture_of_the_makelaar')}
+					/>
 				</div>
 
 				<div className={'section-about-info'}>
@@ -23,7 +28,7 @@ function SectionAbout() {
 					<span className={'section-about-info-txt'}>
 						{t('oprichter_van')}
 						<h2 className={'section-about-info-title-2 text-secondary-main ml-3 mr-3'}>{AppConfig.company}</h2>
-						{t('sinds_2018_actief')}
+						{t('sinds_2026_actief')}
 					</span>
 
 					<div className={'flex flex-row items-center justify-center gap-4 self-start mt-8 mb-8 about-rotating'}>
@@ -32,9 +37,9 @@ function SectionAbout() {
 							texts={qualityTexts}
 							mainClassName="rotating-text-main"
 							staggerFrom="last"
-							initial={{y: '100%'}}
-							animate={{y: 0}}
-							exit={{y: '-120%'}}
+							initial={{ y: '100%' }}
+							animate={{ y: 0 }}
+							exit={{ y: '-120%' }}
 							staggerDuration={0.025}
 							splitLevelClassName="rotating-text-split"
 							transition={{

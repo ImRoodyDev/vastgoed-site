@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import {initReactI18next, useTranslation} from 'react-i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
 
 export const resources = {
 	nl: {
@@ -46,14 +46,13 @@ export const resources = {
 			form_success_message: 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.',
 			form_error_message: 'Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het later opnieuw.',
 
-
 			success: 'Succes',
 			error: 'Fout',
 			required_field: 'Dit veld is verplicht.',
 
 			mijn_naam: 'Mijn naam is',
 			oprichter_van: 'Oprichter en eigenaar van',
-			sinds_2018_actief: `Sinds 2018 ben ik actief in de makelaardij en heb ik in de afgelopen jaren een breed netwerk opgebouwd binnen
+			sinds_2026_actief: `Sinds 2026 ben ik actief in de makelaardij en heb ik in de afgelopen jaren een breed netwerk opgebouwd binnen
 			de vastgoedsector.
 			Dankzij mijn ervaring en betrokkenheid heb ik met succes bemiddeld bij diverse grote projecten en vele klanten begeleid bij de aan- en
 			verkoop van hun woning.`,
@@ -71,25 +70,18 @@ export const resources = {
 			satisfied_clients: 'Tevreden Klanten',
 
 			project: 'Project',
-			ibcc: `Volmerlaan 17 is een kantoorpand van 5.600 m², gelegen in Rijswijk en gebouwd in 1972. 
-			 Het pand beschikt over energielabel C (Energie-index 1.29) en is momenteel in ontwikkeling.
-			 Samen met de gemeente en lokale ondernemers werken we aan een nieuwe invulling van het gebouw, 
-			 met ruimte voor flexibele kantoorruimtes, culturele activiteiten en maatschappelijke initiatieven. 
-			 Dit project is nog in volle gang en biedt veel mogelijkheden voor samenwerking en creatieve ideeën.`,
-			parlement_residences: `Samen met mijn netwerk heb ik een monumentaal pand in hartje Den Haag getransformeerd tot Parlement Residences: een stijlvol woongebouw met twaalf ruime, lichte appartementen.
-			Ik heb bemiddeld bij de aankoop en financiering, en was verantwoordelijk voor het overleg met architecten en de gemeente. Onze aannemers hebben het pand met zorg verbouwd, met behoud van karakter en focus op modern wooncomfort.
-			Momenteel werken we aan de realisatie van een privé spa als exclusieve toevoeging aan het project.
-			Parlement Residences ligt op een unieke locatie vlak bij het Binnenhof en combineert historie met hoogwaardige afwerking en toekomstgericht wonen`,
-			vakantiepark_zwartemeer: `Voor dit bijzondere project heb ik mogen bemiddelen bij de aankoop van Vakantiepark Zwartemeer, gelegen in het prachtige Emmen. Het park vormt een unieke locatie, omringd door natuur en rust, en biedt veel potentie voor verdere ontwikkeling en recreatieve mogelijkheden.
-			Voor dit bijzondere project heb ik mogen bemiddelen bij de aankoop van Vakantiepark Zwartemeer, gelegen in het prachtige Emmen. Het park vormt een unieke locatie, omringd door natuur en rust, en biedt veel potentie voor verdere ontwikkeling en recreatieve mogelijkheden.
-			Vanaf de eerste kennismaking tot aan de overdracht heb ik de aankoopbegeleiding volledig verzorgd. Daarbij lag de focus op het zorgvuldig beoordelen van de waarde, het voeren van onderhandelingen en het waarborgen van een soepel proces tot aan de notaris.
-			Dit project illustreert waar Bridj Makelaardij voor staat: persoonlijke betrokkenheid, deskundig advies en resultaatgerichte bemiddeling. Dankzij nauwe samenwerking met de opdrachtgever en betrokken partijen is een solide basis gelegd voor de toekomst van dit veelbelovende vakantiepark.`,
+			project_urban_loft_title: 'Urban Loft Collective',
+			project_urban_loft_description: `Een flexibel herontwikkelingsconcept voor een stedelijk gebouw met lichte werkruimtes, gedeelde voorzieningen en ruimte voor lokale ondernemers. Deze voorbeeldcase laat zien hoe een bestaand object kan worden gepresenteerd met focus op potentie, fasering en toekomstig gebruik.`,
+			project_canal_view_title: 'Canal View Residences',
+			project_canal_view_description: `Een residentieel showcaseproject met ruime appartementen, warme materialen en een rustige indeling. De case is geschreven als neutrale template-inhoud en kan eenvoudig worden aangepast voor verkoop, verhuur of projectontwikkeling.`,
+			project_greenfield_title: 'Greenfield Retreat',
+			project_greenfield_description: `Een recreatief vastgoedconcept met aandacht voor natuur, verblijfskwaliteit en lange termijn waarde. Deze demo-omschrijving helpt bezoekers snel begrijpen wat het project bijzonder maakt zonder naar een echte locatie of opdrachtgever te verwijzen.`,
 
 			send_inquiry: 'Verstuur uw aanvraag',
 			get_in_touch: 'Neem contact met mij',
 			get_in_touch_description: `Heeft u vragen of wilt u meer informatie over mijn diensten? Neem gerust contact met mij op via onderstaand formulier of bel mij direct. Ik sta klaar om u te helpen bij al uw vastgoedwensen.`,
-			footer_description: `Bridj Makelaardij is uw betrouwbare partner voor al uw vastgoedbehoeften. Met jarenlange ervaring en een uitgebreid netwerk bied ik deskundige begeleiding bij aan- en verkoop, taxaties en vastgoedtransacties. Mijn persoonlijke aanpak en toewijding zorgen ervoor dat u altijd kunt rekenen op professionele service en maatwerkoplossingen. Neem vandaag nog contact met mij op en ontdek hoe ik u kan helpen bij het realiseren van uw vastgoeddoelen.`,
-			footer_copyright: 'Bridj Makelaardij. Alle rechten voorbehouden.',
+			footer_description: `{{company}} is uw betrouwbare partner voor al uw vastgoedbehoeften. Met jarenlange ervaring en een uitgebreid netwerk bied ik deskundige begeleiding bij aan- en verkoop, taxaties en vastgoedtransacties. Mijn persoonlijke aanpak en toewijding zorgen ervoor dat u altijd kunt rekenen op professionele service en maatwerkoplossingen. Neem vandaag nog contact met mij op en ontdek hoe ik u kan helpen bij het realiseren van uw vastgoeddoelen.`,
+			footer_copyright: '{{company}}. Alle rechten voorbehouden.',
 
 			error_sending_message: 'Fout opgetreden van bericht.',
 			error_sending_description: 'Fout opgetreden bij het verzenden van bericht.',
@@ -169,7 +161,7 @@ export const resources = {
 
 			mijn_naam: 'My name is',
 			oprichter_van: 'Founder and owner of',
-			sinds_2018_actief: `Since 2018, I have been active in real estate and have built an extensive network within
+			sinds_2026_actief: `Since 2026, I have been active in real estate and have built an extensive network within
 			the real estate sector over the years.
 			Thanks to my experience and commitment, I have successfully mediated various major projects and guided many clients through buying and
 			selling their homes.`,
@@ -187,25 +179,18 @@ export const resources = {
 			satisfied_clients: 'Satisfied Clients',
 
 			project: 'Project',
-			ibcc: `Volmerlaan 17 is an office building of 5,600 m², located in Rijswijk and built in 1972.
-			 The building has an energy label C (Energy index 1.29) and is currently under development.
-			 Together with the municipality and local entrepreneurs, we are working on a new use of the building,
-			 with space for flexible office spaces, cultural activities, and social initiatives.
-			 This project is still in progress and offers many opportunities for collaboration and creative ideas.`,
-			parlement_residences: `Together with my network, I transformed a monumental building in the heart of The Hague into Parlement Residences: a stylish residential building with twelve spacious, bright apartments.
-			I mediated in the purchase and financing, and was responsible for negotiations with architects and the municipality. Our contractors carefully renovated the building while preserving its character and focusing on modern living comfort.
-			We are currently working on the realization of a private spa as an exclusive addition to the project.
-			Parlement Residences is located in a unique location near the Binnenhof and combines history with high-quality finishes and forward-thinking living.`,
-			vakantiepark_zwartemeer: `For this special project, I had the privilege of mediating the purchase of Vakantiepark Zwartemeer, located in beautiful Emmen. The park is a unique location surrounded by nature and tranquility, and offers great potential for further development and recreational opportunities.
-			For this special project, I had the privilege of mediating the purchase of Vakantiepark Zwartemeer, located in beautiful Emmen. The park is a unique location surrounded by nature and tranquility, and offers great potential for further development and recreational opportunities.
-			From the first meeting to the transfer, I took care of the entire purchase guidance. The focus was on carefully assessing the value, conducting negotiations, and ensuring a smooth process until the notary.
-			This project illustrates what Bridj Real Estate stands for: personal involvement, expert advice, and results-oriented mediation. Thanks to close cooperation with the client and involved parties, a solid foundation has been laid for the future of this promising holiday park.`,
+			project_urban_loft_title: 'Urban Loft Collective',
+			project_urban_loft_description: `A flexible redevelopment concept for an urban building with bright workspaces, shared amenities, and room for local businesses. This sample case shows how an existing property can be presented around potential, phasing, and future use.`,
+			project_canal_view_title: 'Canal View Residences',
+			project_canal_view_description: `A residential showcase project with spacious apartments, warm materials, and a calm layout. The case is written as neutral template content and can be adapted easily for sales, rentals, or property development.`,
+			project_greenfield_title: 'Greenfield Retreat',
+			project_greenfield_description: `A leisure real estate concept focused on nature, guest experience, and long-term value. This demo description helps visitors understand what makes the project attractive without referring to a real location or client.`,
 
 			send_inquiry: 'Send Your Inquiry',
 			get_in_touch: 'Get in Touch',
 			get_in_touch_description: `Do you have questions or want more information about my services? Feel free to contact me via the form below or call me directly. I am ready to help you with all your real estate needs.`,
-			footer_description: `Bridj Real Estate is your trusted partner for all your real estate needs. With years of experience and an extensive network, I offer expert guidance in buying and selling, valuations, and real estate transactions. My personal approach and commitment ensure that you can always count on professional service and tailor-made solutions. Contact me today and discover how I can help you achieve your real estate goals.`,
-			footer_copyright: 'Bridj Real Estate. All rights reserved.',
+			footer_description: `{{company}} is your trusted partner for all your real estate needs. With years of experience and an extensive network, I offer expert guidance in buying and selling, valuations, and real estate transactions. My personal approach and commitment ensure that you can always count on professional service and tailor-made solutions. Contact me today and discover how I can help you achieve your real estate goals.`,
+			footer_copyright: '{{company}}. All rights reserved.',
 
 			error_sending_message: 'Error sending message.',
 			error_sending_description: 'An error occurred while sending your message.',
@@ -285,7 +270,7 @@ export const resources = {
 
 			mijn_naam: 'Mi nombre es',
 			oprichter_van: 'Fundador y propietario de',
-			sinds_2018_actief: `Desde 2018, he estado activo en el sector inmobiliario y he construido una red extensa dentro
+			sinds_2026_actief: `Desde 2026, he estado activo en el sector inmobiliario y he construido una red extensa dentro
 			del sector inmobiliario a lo largo de los años.
 			Gracias a mi experiencia y compromiso, he mediado exitosamente en varios proyectos importantes y he guiado a muchos clientes en la compra y
 			venta de sus propiedades.`,
@@ -303,25 +288,18 @@ export const resources = {
 			satisfied_clients: 'Clientes Satisfechos',
 
 			project: 'Proyecto',
-			ibcc: `Volmerlaan 17 es un edificio de oficinas de 5.600 m², ubicado en Rijswijk y construido en 1972.
-			 El edificio tiene una etiqueta energética C (índice de energía 1.29) y actualmente está en desarrollo.
-			 Junto con el municipio y emprendedores locales, estamos trabajando en un nuevo uso del edificio,
-			 con espacio para oficinas flexibles, actividades culturales e iniciativas sociales.
-			 Este proyecto aún está en progreso y ofrece muchas oportunidades para la colaboración e ideas creativas.`,
-			parlement_residences: `Junto con mi red, transformé un edificio monumental en el corazón de La Haya en Parlement Residences: un edificio residencial elegante con doce apartamentos espaciosos y luminosos.
-			Medié en la compra y financiamiento, y fui responsable de las negociaciones con arquitectos y el municipio. Nuestros contratistas renovaron cuidadosamente el edificio mientras preservaban su carácter y enfocándose en la comodidad moderna de la vivienda.
-			Actualmente estamos trabajando en la realización de un spa privado como adición exclusiva al proyecto.
-			Parlement Residences se encuentra en una ubicación única cerca del Binnenhof y combina historia con acabados de alta calidad y vivienda de mentalidad futura.`,
-			vakantiepark_zwartemeer: `Para este proyecto especial, tuve el privilegio de mediar en la compra de Vakantiepark Zwartemeer, ubicado en el hermoso Emmen. El parque es una ubicación única rodeada de naturaleza y tranquilidad, y ofrece gran potencial para desarrollo adicional y oportunidades recreativas.
-			Para este proyecto especial, tuve el privilegio de mediar en la compra de Vakantiepark Zwartemeer, ubicado en el hermoso Emmen. El parque es una ubicación única rodeada de naturaleza y tranquilidad, y ofrece gran potencial para desarrollo adicional y oportunidades recreativas.
-			Desde el primer encuentro hasta la transferencia, me encargué de toda la guía de compra. El enfoque estuvo en evaluar cuidadosamente el valor, conducir negociaciones y garantizar un proceso sin problemas hasta la notaría.
-			Este proyecto ilustra lo que representa Bridj Inmobiliaria: involucramiento personal, asesoramiento experto y mediación orientada a resultados. Gracias a la estrecha cooperación con el cliente y las partes involucradas, se ha sentado una base sólida para el futuro de este prometedor parque vacacional.`,
+			project_urban_loft_title: 'Colectivo Loft Urbano',
+			project_urban_loft_description: `Un concepto flexible de remodelacion para un edificio urbano con espacios de trabajo luminosos, servicios compartidos y lugar para negocios locales. Este caso de ejemplo muestra como presentar una propiedad existente por su potencial, fases y uso futuro.`,
+			project_canal_view_title: 'Residencias Vista Canal',
+			project_canal_view_description: `Un proyecto residencial de muestra con apartamentos amplios, materiales calidos y una distribucion tranquila. El texto esta escrito como contenido neutro de plantilla y se puede adaptar para venta, alquiler o desarrollo inmobiliario.`,
+			project_greenfield_title: 'Retiro Greenfield',
+			project_greenfield_description: `Un concepto inmobiliario recreativo centrado en naturaleza, experiencia del visitante y valor a largo plazo. Esta descripcion demo ayuda a explicar el atractivo del proyecto sin mencionar una ubicacion o cliente real.`,
 
 			send_inquiry: 'Envía Tu Consulta',
 			get_in_touch: 'Ponte en Contacto',
 			get_in_touch_description: `¿Tienes preguntas o deseas más información sobre mis servicios? Siéntete libre de contactarme a través del formulario a continuación o llámame directamente. Estoy listo para ayudarte con todas tus necesidades inmobiliarias.`,
-			footer_description: `Bridj Inmobiliaria es tu socio de confianza para todas tus necesidades inmobiliarias. Con años de experiencia y una red extensa, ofrezco orientación experta en compra y venta, valuaciones y transacciones inmobiliarias. Mi enfoque personal y compromiso aseguran que siempre puedas contar con servicio profesional y soluciones personalizadas. Contáctame hoy y descubre cómo puedo ayudarte a lograr tus objetivos inmobiliarios.`,
-			footer_copyright: 'Bridj Inmobiliaria. Todos los derechos reservados.',
+			footer_description: `{{company}} es tu socio de confianza para todas tus necesidades inmobiliarias. Con años de experiencia y una red extensa, ofrezco orientación experta en compra y venta, valuaciones y transacciones inmobiliarias. Mi enfoque personal y compromiso aseguran que siempre puedas contar con servicio profesional y soluciones personalizadas. Contáctame hoy y descubre cómo puedo ayudarte a lograr tus objetivos inmobiliarios.`,
+			footer_copyright: '{{company}}. Todos los derechos reservados.',
 
 			error_sending_message: 'Error al enviar el mensaje.',
 			error_sending_description: 'Ocurrió un error al enviar tu mensaje.',
@@ -365,7 +343,7 @@ export const resources = {
 			contact_me: 'Mettez-vous en contact avec moi',
 			vetrouwde_makelaar: 'Votre Agent Immobilier \nde Confiance.',
 
-			opening_hours: 'Heures d\'Ouverture',
+			opening_hours: "Heures d'Ouverture",
 			monday: 'Lun',
 			friday: 'Ven',
 
@@ -393,7 +371,7 @@ export const resources = {
 
 			send_message: 'Envoyer le Message',
 			form_success_message: 'Merci pour votre message ! Nous vous répondrons dès que possible.',
-			form_error_message: 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer plus tard.',
+			form_error_message: "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
 
 			success: 'Succès',
 			error: 'Erreur',
@@ -401,7 +379,7 @@ export const resources = {
 
 			mijn_naam: 'Mon nom est',
 			oprichter_van: 'Fondateur et propriétaire de',
-			sinds_2018_actief: `Depuis 2018, j'exerce dans le secteur immobilier et j'ai constitué un large réseau au cours des dernières années dans
+			sinds_2026_actief: `Depuis 2026, j'exerce dans le secteur immobilier et j'ai constitué un large réseau au cours des dernières années dans
 			le secteur immobilier.
 			Grâce à mon expérience et à mon engagement, j'ai réussi à intervenir dans divers grands projets et j'ai accompagné de nombreux clients dans l'achat et
 			la vente de leurs propriétés.`,
@@ -414,57 +392,50 @@ export const resources = {
 			ik_zorg_ervoor: `Je m'assure que l'offre immobilière est toujours à jour et que chaque client peut compter sur des conseils d'experts et un soutien professionnel tout au long du processus de la première rencontre jusqu'à la signature chez le notaire.
 			Qu'il s'agisse d'un achat, d'une vente, d'évaluations ou d'orientation dans les transactions immobilières, j'offre un service complet adapté à vos besoins et à votre situation.`,
 
-			years_of_experience: 'Années d\'Expérience',
+			years_of_experience: "Années d'Expérience",
 			rented_properties: 'Propriétés en Location',
 			satisfied_clients: 'Clients Satisfaits',
 
 			project: 'Projet',
-			ibcc: `Volmerlaan 17 est un bâtiment de bureaux de 5 600 m², situé à Rijswijk et construit en 1972.
-			 Le bâtiment possède un label énergétique C (indice énergétique 1,29) et est actuellement en développement.
-			 Ensemble avec la commune et les entrepreneurs locaux, nous travaillons à une nouvelle utilisation du bâtiment,
-			 avec de l'espace pour des bureaux flexibles, des activités culturelles et des initiatives sociales.
-			 Ce projet est encore en cours et offre de nombreuses possibilités de collaboration et d'idées créatives.`,
-			parlement_residences: `Avec mon réseau, j'ai transformé un bâtiment monumental au cœur de La Haye en Parlement Residences : un immeuble résidentiel élégant avec douze appartements spacieux et lumineux.
-			J'ai participé à l'achat et au financement, et j'ai été responsable des négociations avec les architectes et la commune. Nos entrepreneurs ont soigneusement rénové le bâtiment tout en préservant son caractère et en se concentrant sur le confort moderne de la vie.
-			Nous travaillons actuellement à la réalisation d'un spa privé comme ajout exclusif au projet.
-			Parlement Residences est situé dans un emplacement unique près du Binnenhof et combine l'histoire avec des finitions de haute qualité et une vie tournée vers l'avenir.`,
-			vakantiepark_zwartemeer: `Pour ce projet spécial, j'ai eu le privilège de participer à l'achat de Vakantiepark Zwartemeer, situé dans le magnifique Emmen. Le parc est un emplacement unique entouré par la nature et la tranquillité, et offre un grand potentiel pour un développement ultérieur et des possibilités récréatives.
-			Pour ce projet spécial, j'ai eu le privilège de participer à l'achat de Vakantiepark Zwartemeer, situé dans le magnifique Emmen. Le parc est un emplacement unique entouré par la nature et la tranquillité, et offre un grand potentiel pour un développement ultérieur et des possibilités récréatives.
-			De la première rencontre à la signature, j'ai géré l'ensemble du processus d'achat. L'accent a été mis sur l'évaluation prudente de la valeur, la conduite des négociations et la garantie d'un processus en douceur jusqu'au notaire.
-			Ce projet illustre ce que représente Bridj Immobilier : engagement personnel, conseil d'expert et médiation orientée résultats. Grâce à une étroite coopération avec le client et les parties impliquées, une base solide a été établie pour l'avenir de ce parc de vacances prometteur.`,
+			project_urban_loft_title: 'Collectif Loft Urbain',
+			project_urban_loft_description: `Un concept flexible de redeveloppement pour un immeuble urbain avec des espaces de travail lumineux, des services partages et de la place pour des entreprises locales. Cet exemple montre comment presenter un bien existant par son potentiel, ses phases et son usage futur.`,
+			project_canal_view_title: 'Residences Vue Canal',
+			project_canal_view_description: `Un projet residentiel de demonstration avec des appartements spacieux, des materiaux chaleureux et une organisation claire. Le texte est neutre pour une template et peut etre adapte a la vente, a la location ou au developpement immobilier.`,
+			project_greenfield_title: 'Retraite Greenfield',
+			project_greenfield_description: `Un concept immobilier de loisirs axe sur la nature, l experience des visiteurs et la valeur a long terme. Cette description demo explique rapidement l interet du projet sans citer de lieu ou de client reel.`,
 
 			send_inquiry: 'Envoyer Votre Demande',
 			get_in_touch: 'Contactez-Nous',
 			get_in_touch_description: `Avez-vous des questions ou souhaitez-vous plus d'informations sur mes services ? N'hésitez pas à me contacter via le formulaire ci-dessous ou appelez-moi directement. Je suis prêt à vous aider avec tous vos besoins immobiliers.`,
-			footer_description: `Bridj Immobilier est votre partenaire de confiance pour tous vos besoins immobiliers. Avec des années d'expérience et un vaste réseau, j'offre des conseils d'experts en achat et vente, évaluations et transactions immobilières. Mon approche personnelle et mon engagement garantissent que vous pouvez toujours compter sur un service professionnel et des solutions sur mesure. Contactez-moi dès aujourd'hui et découvrez comment je peux vous aider à atteindre vos objectifs immobiliers.`,
-			footer_copyright: 'Bridj Immobilier. Tous les droits réservés.',
+			footer_description: `{{company}} est votre partenaire de confiance pour tous vos besoins immobiliers. Avec des années d'expérience et un vaste réseau, j'offre des conseils d'experts en achat et vente, évaluations et transactions immobilières. Mon approche personnelle et mon engagement garantissent que vous pouvez toujours compter sur un service professionnel et des solutions sur mesure. Contactez-moi dès aujourd'hui et découvrez comment je peux vous aider à atteindre vos objectifs immobiliers.`,
+			footer_copyright: '{{company}}. Tous les droits réservés.',
 
-			error_sending_message: 'Erreur lors de l\'envoi du message.',
-			error_sending_description: 'Une erreur s\'est produite lors de l\'envoi de votre message.',
+			error_sending_message: "Erreur lors de l'envoi du message.",
+			error_sending_description: "Une erreur s'est produite lors de l'envoi de votre message.",
 
 			successfully_sent_message: 'Message envoyé avec succès.',
 			successfully_sent_message_description: 'Votre message a été envoyé. Merci de nous avoir contactés !',
 
 			loading_sending_message: 'Envoi du message..',
-			loading_sending_message_description: 'Votre message est en cours d\'envoi, veuillez patienter...', //in other language Please wait while we process your submission
+			loading_sending_message_description: "Votre message est en cours d'envoi, veuillez patienter...", //in other language Please wait while we process your submission
 
-			something_went_wrong: 'Quelque chose s\'est mal passé.',
-			unexpected_happened: 'Une erreur inattendue s\'est produite. Veuillez réessayer plus tard.',
+			something_went_wrong: "Quelque chose s'est mal passé.",
+			unexpected_happened: "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
 
 			page_not_found: 'Page Non Trouvée',
 			page_not_found_description: `La page que vous recherchez n'existe pas ou a été déplacée. Retournez à la page d'accueil ou contactez-nous pour obtenir de l'aide.`,
-			go_back_home: 'Aller à la Page d\'Accueil',
+			go_back_home: "Aller à la Page d'Accueil",
 
 			aria_logo: 'Logo du site web',
-			alt_error_bug_picture: 'Image d\'erreur',
+			alt_error_bug_picture: "Image d'erreur",
 			alt_clouds_picture: 'Image de nuages',
 			alt_houses_picture: 'Image de maisons',
 			alt_close_button: 'Bouton fermer',
-			alt_picture_of_the_makelaar: 'Image de l\'agent immobilier',
-			alt_shape_behind_makelaar: 'Forme derrière l\'image de l\'agent',
+			alt_picture_of_the_makelaar: "Image de l'agent immobilier",
+			alt_shape_behind_makelaar: "Forme derrière l'image de l'agent",
 			alt_contact_us_picture: 'Image Contactez-nous',
 			alt_sofa_picture: 'Image de canapé',
-			alt_light_bolb: 'Image d\'ampoule',
+			alt_light_bolb: "Image d'ampoule",
 		},
 	},
 } as const;
@@ -476,11 +447,11 @@ i18n
 		lng: 'nl', // if you're using a language detector, do not define the lng option
 		fallbackLng: 'nl',
 		debug: false,
-		interpolation: {escapeValue: false},
+		interpolation: { escapeValue: false },
 	})
 	.then(null);
 
 export type LocalizationResources = (typeof resources)['nl']; //keyof typeof resources['nl']['translation'];
 export type LocalizationTexts = keyof (typeof resources)['nl']['translation'];
 export type SupportedLanguages = keyof typeof resources;
-export {useTranslation};
+export { useTranslation };

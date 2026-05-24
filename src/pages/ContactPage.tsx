@@ -5,6 +5,7 @@ import React from 'react';
 import Page from '../components/screens/Page';
 import SectionContactForm from "../components/sections/SectionContactForm";
 import {useRootContext} from "../contexts/RootContext";
+import {publicPath} from "../utils/publicPath";
 
 function ContactPage() {
 	const {t} = useRootContext();
@@ -12,7 +13,7 @@ function ContactPage() {
 	return (
 		<Page className={'min-h-screen'}>
 			<SectionContactForm/>
-			<img src={'/pictures/den_haag_houses.png'} className={'contact-bg-img'} alt={t('alt_houses_picture')}/>
+			<img src={publicPath('/pictures/den_haag_houses.png')} className={'contact-bg-img'} alt={t('alt_houses_picture')}/>
 		</Page>
 	);
 }

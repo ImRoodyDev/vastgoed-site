@@ -1,14 +1,14 @@
 // Internal imports
-import React, {useCallback} from 'react';
+import React, { useCallback } from 'react';
 
 // Internal imports
 import Logo from '../elements/Logo';
 import LanguagePicker from '../buttons/LanguagePicker';
-import {useRootContext} from '../../contexts/RootContext';
-import AppConfig from '../../constant/application'
+import { useRootContext } from '../../contexts/RootContext';
+import AppConfig from '../../constant/application';
 
 export function AppFooter() {
-	const {t} = useRootContext();
+	const { t } = useRootContext();
 
 	const handleSocialClick = useCallback((platform: 'tiktok' | 'whatsapp') => {
 		let url;
@@ -32,13 +32,21 @@ export function AppFooter() {
 		<footer className="app-footer">
 			<div className="app-footer-ctn">
 				<div className="app-footer-block flex-[2] first">
-					<Logo className="app-footer-logo"/>
-					<h3 className={'app-footer-description'}>{t('footer_description')?.replace('Bridj Makelaardij', AppConfig.company)}</h3>
+					<Logo className="app-footer-logo" />
+					<h3 className={'app-footer-description'}>{t('footer_description', { company: AppConfig.company })}</h3>
 					<div className="social-card">
-						<button className="socialContainer containerTwo" aria-label="TikTok" onClick={() => handleSocialClick('tiktok')}>
+						<button
+							className="socialContainer containerTwo"
+							aria-label="TikTok"
+							onClick={() => handleSocialClick('tiktok')}
+						>
 							<i className="socialSvg bi bi-tiktok"></i>
 						</button>
-						<button className="socialContainer containerFour" aria-label={'Whatsapp'} onClick={() => handleSocialClick('whatsapp')}>
+						<button
+							className="socialContainer containerFour"
+							aria-label={'Whatsapp'}
+							onClick={() => handleSocialClick('whatsapp')}
+						>
 							<i className="socialSvg bi bi-whatsapp"></i>
 						</button>
 
@@ -63,38 +71,49 @@ export function AppFooter() {
 						<div className={'app-footer-anchor'}>
 							<i className="bi bi-clock-fill app-footer-anchor-icon"></i>
 							<span className={'app-footer-anchor-txt'}>
-								{t('opening_hours')}:
-								{" " + t('monday')}-{t('friday') + " "}
+								{t('opening_hours')}:{' ' + t('monday')}-{t('friday') + ' '}
 								9:00 - 18:00
 							</span>
 						</div>
 						<div className={'app-footer-anchor'}>
 							<i className="bi bi-at app-footer-anchor-icon"></i>
-							<a className={'app-footer-anchor-txt'} href={`mailto:${AppConfig.email}`}>{AppConfig.email}</a>
+							<a className={'app-footer-anchor-txt'} href={`mailto:${AppConfig.email}`}>
+								{AppConfig.email}
+							</a>
 						</div>
 						<div className={'app-footer-anchor'}>
 							<i className="bi bi-telephone-fill app-footer-anchor-icon"></i>
-							<a className={'app-footer-anchor-txt'} href={`tel:${AppConfig.phone.replace(/\s+/g, '')}`}>{AppConfig.phone}</a>
+							<a className={'app-footer-anchor-txt'} href={`tel:${AppConfig.phone.replace(/\s+/g, '')}`}>
+								{AppConfig.phone}
+							</a>
 						</div>
 					</div>
 				</div>
 				<div className="app-footer-block">
 					<nav id={'footer-nav'} className={'app-footer-nav'}>
 						<h4 className={'app-footer-anchor-title'}>{t('sitemap')}</h4>
-						<a className={'app-footer-anchor'} href={'#home'}>{t('home')}</a>
-						<a className={'app-footer-anchor'} href={'#blog'}>{t('blog')}</a>
-						<a className={'app-footer-anchor'} href={'#projecten'}>{t('projects')}</a>
-						<a className={'app-footer-anchor'} href={'#contact'}>{t('contact')}</a>
+						<a className={'app-footer-anchor'} href={'#home'}>
+							{t('home')}
+						</a>
+						<a className={'app-footer-anchor'} href={'#blog'}>
+							{t('blog')}
+						</a>
+						<a className={'app-footer-anchor'} href={'#projecten'}>
+							{t('projects')}
+						</a>
+						<a className={'app-footer-anchor'} href={'#contact'}>
+							{t('contact')}
+						</a>
 					</nav>
 				</div>
 				<div className="app-footer-block">
-					<LanguagePicker/>
+					<LanguagePicker />
 				</div>
 			</div>
-			<div className="app-footer-line"/>
+			<div className="app-footer-line" />
 			<div className={'app-footer-copyright'}>
 				<p className={'app-footer-copyright-txt'}>
-					&copy; {new Date().getFullYear()} {t('footer_copyright')}
+					&copy; {new Date().getFullYear()} {t('footer_copyright', { company: AppConfig.company })}
 				</p>
 			</div>
 		</footer>

@@ -1,23 +1,21 @@
 const config = {
 	VERSION: '1.0.0',
-	API: 'https://api.bridjmakelaardij.nl',
+	API: 'https://api.vastgoed.com',
 
-	owner: 'Arjoen Bridj',
-	company: 'Bridj Vastgoed',
-	location: 'Den Haag, Nederland',
+	owner: 'John Doe',
+	company: 'Jouw Vastgoed',
+	location: 'Rotterdam, Nederland',
 	WEB3FORMS_URL: 'https://api.web3forms.com/submit',
-	WEB3FORMS_ACCESS_KEY: 'd8ffb29b-8cd0-480d-bc53-d256948aff48',
+	WEB3FORMS_ACCESS_KEY: 'YOUR_ACCESS_KEY',
 
-	email: 'info@bridjvastgoed.com',
-	phone: '31704305693',
-	tiktok_url: 'https://www.tiktok.com/@bridjvastgoed',
-	whatsapp_url: 'https://wa.me/31704305693',
+	email: 'info@vastgoed.com',
+	phone: '00000000000',
+	tiktok_url: 'https://www.tiktok.com/@vastgoed',
+	whatsapp_url: 'https://wa.me/00000000000',
 
-	gehuurd: 250,
-	projecten: 10,
-	jarenErvaring: 7,
+	gehuurd: 1000,
+	projecten: 40,
+	jarenErvaring: 15,
 } as const;
 
-
 export default config;
-

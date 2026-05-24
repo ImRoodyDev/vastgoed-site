@@ -5,6 +5,7 @@ import React from 'react';
 import Button from '../buttons/Button';
 import {useRootContext} from '../../contexts/RootContext';
 import AppConfig from '../../constant/application';
+import {publicPath} from '../../utils/publicPath';
 
 function SectionHome() {
 	const {t, navigate} = useRootContext();
@@ -16,7 +17,7 @@ function SectionHome() {
 					{/*<img src={'/pictures/sofa-light.png'} className={'sofa-light-img'} alt={t('alt_light_bolb')}/>*/}
 					{/*<img src={'/pictures/sofa.png'} className={'sofa-img'} alt={t('alt_sofa_picture')}/>*/}
 					{/*<div className={'section-about-top-gradient'}/>*/}
-					<img src={'/pictures/den_haag_houses.png'} className={'house-img'} alt={t('alt_houses_picture')}/>
+					<img src={publicPath('/pictures/den_haag_houses.png')} className={'house-img'} alt={t('alt_houses_picture')}/>
 				</div>
 			</div>
 

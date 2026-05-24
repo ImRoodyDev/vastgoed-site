@@ -15,6 +15,7 @@ import {delay} from "../../utils/standards";
 import {ContactFormValidationErrors} from "../../types/ContactFormData";
 import {fetchResponse} from "../../utils/fetchHelpers";
 import AppConfig from "../../constant/application";
+import {publicPath} from "../../utils/publicPath";
 
 // Framer Motion shared animation properties
 const cardContentAnimation = {
@@ -108,8 +109,8 @@ const SectionContactForm: React.FC = () => {
 					</div>
 					<div className={'contact-form-gallery'}>
 						<Logo className='contact-form-gallery-logo'/>
-						<img src={'/pictures/den_haag_houses.png'} className={'contact-form-houses-img'} alt={t('alt_houses_picture')}/>
-						<img src={'/pictures/clouds.png'} className={'contact-form-clouds-img'} alt={t('alt_clouds_picture')}/>
+						<img src={publicPath('/pictures/den_haag_houses.png')} className={'contact-form-houses-img'} alt={t('alt_houses_picture')}/>
+						<img src={publicPath('/pictures/clouds.png')} className={'contact-form-clouds-img'} alt={t('alt_clouds_picture')}/>
 						<div className={'contact-form-gallery-gradient'}/>
 					</div>
 				</div>

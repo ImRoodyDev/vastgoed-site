@@ -1,48 +1,53 @@
 import React from 'react';
 import CarouselSwitcher from '../elements/CarouselSwitcher';
-import {useRootContext} from '../../contexts/RootContext';
+import { useRootContext } from '../../contexts/RootContext';
+import { publicPath } from '../../utils/publicPath';
 
 function SectionProjects() {
-	const {t} = useRootContext();
+	const { t } = useRootContext();
 
 	const carouselData = [
 		{
 			id: 1,
-			title: 'Project IBCC',
+			title: t('project_urban_loft_title'),
 			subtitle: `${t('project')} 1`,
-			description: t('ibcc'),
+			description: t('project_urban_loft_description'),
 			images: [
-				{url: '/pictures/ibcc/ibcc-1.webp', alt: 'Tour 1'},
-				{url: '/pictures/ibcc/ibcc-2.webp', alt: 'Tour 2'},
-				{url: '/pictures/ibcc/ibcc-3.webp', alt: 'Tour 3'},
-				{url: '/pictures/ibcc/ibcc-4.png', alt: 'Tour 4'},
+				{ url: publicPath('/pictures/projects/urban-loft-exterior.png'), alt: 'Urban loft exterior' },
+				{ url: publicPath('/pictures/projects/urban-loft-interior.png'), alt: 'Urban loft interior' },
+				{ url: publicPath('/pictures/projects/urban-loft-exterior-2.png'), alt: 'Urban loft courtyard exterior' },
+				{ url: publicPath('/pictures/projects/urban-loft-interior-2.png'), alt: 'Urban loft shared interior' },
 			],
 		},
 		{
 			id: 2,
 			subtitle: `${t('project')} 2`,
-			title: 'Project Parlement residences',
-			description: t('parlement_residences'),
+			title: t('project_canal_view_title'),
+			description: t('project_canal_view_description'),
 			images: [
-				{url: '/pictures/ppt/ppt-1.webp', alt: 'Window 1', className: 'carousel-item__image-element-center'},
-				{url: '/pictures/ppt/ppt-2.webp', alt: 'Window 2'},
+				{ url: publicPath('/pictures/projects/canal-view-exterior.png'), alt: 'Canal view residence exterior', className: 'carousel-item__image-element-center' },
+				{ url: publicPath('/pictures/projects/canal-view-interior.png'), alt: 'Canal view residence interior' },
+				{ url: publicPath('/pictures/projects/canal-view-exterior-2.png'), alt: 'Canal view residence entrance' },
+				{ url: publicPath('/pictures/projects/canal-view-interior-2.png'), alt: 'Canal view residence bedroom' },
 			],
 		},
 		{
 			id: 3,
 			subtitle: `${t('project')} 3`,
-			title: 'Vakantiepark Zwartemeer Emmen',
-			description: t('vakantiepark_zwartemeer'),
+			title: t('project_greenfield_title'),
+			description: t('project_greenfield_description'),
 			images: [
-				{url: '/pictures/vkz/vkz-1.jpg', alt: 'Palms 1'},
-				{url: '/pictures/vkz/vkz-2.jpg', alt: 'Palms 2'},
+				{ url: publicPath('/pictures/projects/greenfield-exterior.png'), alt: 'Greenfield retreat exterior' },
+				{ url: publicPath('/pictures/projects/greenfield-interior.png'), alt: 'Greenfield retreat interior' },
+				{ url: publicPath('/pictures/projects/greenfield-exterior-2.png'), alt: 'Greenfield retreat lodge exterior' },
+				{ url: publicPath('/pictures/projects/greenfield-interior-2.png'), alt: 'Greenfield retreat guest room' },
 			],
 		},
 	];
 
 	return (
 		<section id={'projecten'} className={'section-project'}>
-			<CarouselSwitcher items={carouselData}/>
+			<CarouselSwitcher items={carouselData} />
 		</section>
 	);
 }
