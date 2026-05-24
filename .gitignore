@@ -26,5 +26,4 @@ test/*
 test
 dist/
 
-package-lock.json
 yarn.lock
